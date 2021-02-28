@@ -1,6 +1,6 @@
 package shapes;
 
-public class Rectangle implements Shape {
+public class Rectangle extends Shape {
     private double height;
     private double width;
 
@@ -13,6 +13,7 @@ public class Rectangle implements Shape {
         this.height = height;
     }
 
+    @Override
     public double area() {
         return height * width;
     }
@@ -25,14 +26,16 @@ public class Rectangle implements Shape {
         return height;
     }
 
+    @Override
     public double perimeter() {
-        return height * 2 + width * 2;
+        return 2 * (height + width);
     }
 
     public double width() {
         return width;
     }
 
+    @Override
     public String toString() {
         return "";
     }

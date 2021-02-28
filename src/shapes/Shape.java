@@ -1,8 +1,7 @@
 package shapes;
 
-public interface Shape {
-
-    public double area();
-    public double perimeter();
-    public String toString();
+public abstract class Shape {
+    public abstract double area();
+    public abstract double perimeter();
+    public abstract String toString();
 }
